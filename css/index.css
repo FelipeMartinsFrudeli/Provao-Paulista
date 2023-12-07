@@ -1,0 +1,158 @@
+
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    
+    --clr-primary-300: hsl(15, 32%, 90%);
+    --clr-primary-400: hsl(15, 32%, 80%);
+
+    --clr-secondary-300: hsl(17, 75%, 67%);
+    --clr-secondary-400: hsl(17, 75%, 50%);
+
+    --clr-accent-300: hsl(0, 82%, 39%);
+    --clr-accent-400: hsl(0, 82%, 20%);
+
+    --clr-black: hsl(242, 29%, 23%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+body {
+    background-color: var(--clr-primary-300);
+}
+
+.wrapper {
+    width: calc(100% - 10em);
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.hiden {
+    display: none;
+}
+
+header {
+    background-color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 1.4em;
+}
+
+.menu a {
+    color: #000;
+    font-weight: bold;
+    padding: 1.4em 1em;
+}
+
+.menu ul {
+    margin-left: auto;
+}
+
+.hero-section {
+    background-image: url('../images/Hero.png');
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .content {
+    width: 70%;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.hero-section .content h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.about-exam {
+    margin-top: 4em;
+}
+
+.about-exam p {
+    margin-top: 1em;
+}
+
+.extra-info {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.6em;
+    background-color: var(--clr-secondary-400);
+}
+
+.extra-info article {
+    color: #fff;
+}
+
+.cadastro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4em auto;
+}
+
+.form-cadastro {
+    width: 60%;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 24px;
+}
+
+.form-cadastro div {
+    margin-top: 1.4em;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    font-weight: 600;
+}
+
+.input-container input {
+    padding: 0.5em;
+}
+
+.input-container button {
+    padding: 1em;
+    width: 50%;
+    background-color: var(--clr-secondary-400);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    margin-top: 1em;
+}
